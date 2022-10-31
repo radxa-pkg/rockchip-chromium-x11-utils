@@ -1,0 +1,16 @@
+Source: rockchip-chromium-x11-patch
+Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
+Section: admin
+Priority: standard
+Standards-Version: 4.6.0
+Build-Depends: debhelper (>=9),
+               devscripts,
+               lintian,
+
+Package: rockchip-chromium-x11-patch
+Architecture: all
+Section: admin
+Priority: standard
+Depends: coreutils,
+         ${misc:Depends},
+Description: Rockchip Chromium X11 Patch

@@ -1,0 +1,7 @@
+/.debhelper
+/debhelper-build-stamp
+/files
+/rockchip-chromium-x11-patch
+/*.debhelper.log
+/*.postrm.debhelper
+/*.substvars

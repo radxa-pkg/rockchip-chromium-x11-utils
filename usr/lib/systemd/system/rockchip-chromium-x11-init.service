@@ -1,0 +1,13 @@
+#start
+[Unit]
+Description=Initial Rockchip Chromium X11
+After=systemd-remount-fs.service
+
+[Service]
+Type=oneshot
+ExecStart=-/usr/bin/rockchip-chromium-x11-init.sh
+
+[Install]
+WantedBy=basic.target
+#end
+

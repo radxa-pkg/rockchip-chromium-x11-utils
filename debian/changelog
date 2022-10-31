@@ -1,0 +1,5 @@
+rockchip-chromium-x11-patch (0.0.1) stable; urgency=high
+
+  * Add rockchip-chromium-x11-init serivce.
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 31 Oct 2022 17:57:00 +0800
