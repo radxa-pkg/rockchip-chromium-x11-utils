@@ -7,6 +7,13 @@ LIBDIR ?= $(PREFIX)/lib
 all:
 
 #
+# Test
+#
+.PHONY: test
+test:
+	echo "nothing"
+
+#
 # Install
 #
 .PHONY: install
