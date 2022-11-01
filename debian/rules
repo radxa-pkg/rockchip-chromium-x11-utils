@@ -8,3 +8,6 @@ include /usr/share/dpkg/architecture.mk
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
+
+override_dh_installsystemd:
+	dh_installsystemd --name=rockchip-chromium-x11-utils

@@ -3,7 +3,7 @@ Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
 Section: admin
 Priority: standard
 Standards-Version: 4.6.0
-Build-Depends: debhelper (>=9),
+Build-Depends: debhelper (>=12~),
                devscripts,
                lintian,
 

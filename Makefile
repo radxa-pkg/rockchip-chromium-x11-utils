@@ -18,9 +18,6 @@ test:
 #
 .PHONY: install
 install:
-	install -d $(DESTDIR)$(LIBDIR)/systemd/system
-	install -m 644 usr/lib/systemd/system/rockchip-chromium-x11-init.service $(DESTDIR)$(LIBDIR)/systemd/system
-
 	install -d $(DESTDIR)$(BINDIR)
 	install -m 755 usr/bin/rockchip-chromium-x11-init.sh $(DESTDIR)$(BINDIR)/rockchip-chromium-x11-init.sh
 
