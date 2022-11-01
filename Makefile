@@ -1,4 +1,4 @@
-PROJECT ?= rockchip-chromium-x11-patch
+PROJECT ?= rockchip-chromium-x11-utils
 PREFIX ?= /usr
 BINDIR ?= $(PREFIX)/bin
 LIBDIR ?= $(PREFIX)/lib

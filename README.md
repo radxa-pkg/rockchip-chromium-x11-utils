@@ -1,6 +1,6 @@
-# rockchip-chromium-x11-patch
+# rockchip-chromium-x11-utils
 
-[![Build & Release](https://github.com/radxa-pkg/rockchip-chromium-x11-patch/actions/workflows/release.yml/badge.svg)](https://github.com/radxa-pkg/rockchip-chromium-x11-patch/actions/workflows/release.yml)
+[![Build & Release](https://github.com/radxa-pkg/rockchip-chromium-x11-utils/actions/workflows/release.yml/badge.svg)](https://github.com/radxa-pkg/rockchip-chromium-x11-utils/actions/workflows/release.yml)
 
 This provides one service to create needed devices for rockchip chromium x11 at system startup.
 

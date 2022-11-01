@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: rockchip-chromium-x11-patch
-Source: https://github.com/radxa-pkg/rockchip-chromium-x11-patch
+Upstream-Name: rockchip-chromium-x11-utils
+Source: https://github.com/radxa-pkg/rockchip-chromium-x11-utils
  
 Files: *
 Copyright: © 2022 Radxa Computer Co., Ltd

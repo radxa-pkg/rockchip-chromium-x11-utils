@@ -1,4 +1,4 @@
-Source: rockchip-chromium-x11-patch
+Source: rockchip-chromium-x11-utils
 Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
 Section: admin
 Priority: standard
@@ -7,7 +7,7 @@ Build-Depends: debhelper (>=9),
                devscripts,
                lintian,
 
-Package: rockchip-chromium-x11-patch
+Package: rockchip-chromium-x11-utils
 Architecture: all
 Section: admin
 Priority: standard

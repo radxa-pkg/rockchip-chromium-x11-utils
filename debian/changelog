@@ -1,4 +1,4 @@
-rockchip-chromium-x11-patch (0.0.1) stable; urgency=high
+rockchip-chromium-x11-utils (0.0.1) stable; urgency=high
 
   * Add rockchip-chromium-x11-init serivce.
 
