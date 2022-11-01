@@ -5,7 +5,7 @@ LIBDIR ?= $(PREFIX)/lib
 MANDIR ?= $(PREFIX)/share/man
 
 .PHONY: all
-all:
+all: build
 
 #
 # Test
@@ -31,6 +31,7 @@ $(SRC-MAN)/%: $(SRC-MAN)/%.md
 
 SRC-DOC		:=	.
 DOCS		:=	$(SRC-DOC)/SOURCE
+.PHONY: build-doc
 build-doc: $(DOCS)
 
 $(SRC-DOC):
