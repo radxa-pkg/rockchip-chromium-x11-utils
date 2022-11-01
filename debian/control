@@ -6,11 +6,15 @@ Standards-Version: 4.6.0
 Build-Depends: debhelper (>=12~),
                devscripts,
                lintian,
+               pandoc,
+               shellcheck,
 
 Package: rockchip-chromium-x11-utils
 Architecture: all
 Section: admin
 Priority: standard
-Depends: coreutils,
-         ${misc:Depends},
-Description: Rockchip Chromium X11 Patch
+Depends: ${misc:Depends},
+Enhances: chromium-x11
+Description: Support package for Rockchip Chromium
+ This package provide the necessary services to ensure
+ proper functionality of Rockchip Chromium.

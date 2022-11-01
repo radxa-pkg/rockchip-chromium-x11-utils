@@ -2,6 +2,7 @@ PROJECT ?= rockchip-chromium-x11-utils
 PREFIX ?= /usr
 BINDIR ?= $(PREFIX)/bin
 LIBDIR ?= $(PREFIX)/lib
+MANDIR ?= $(PREFIX)/share/man
 
 .PHONY: all
 all:
@@ -11,15 +12,46 @@ all:
 #
 .PHONY: test
 test:
-	echo "nothing"
+	shellcheck -x usr/bin/rockchip-chromium-prep
+
+#
+# Build
+#
+.PHONY: build
+build: build-man build-doc
+
+SRC-MAN		:=	man
+SRCS-MAN	:=	$(wildcard $(SRC-MAN)/*.md)
+MANS		:=	$(SRCS-MAN:.md=)
+.PHONY: build-man
+build-man: $(MANS)
+
+$(SRC-MAN)/%: $(SRC-MAN)/%.md
+	pandoc "$<" -o "$@" --from markdown --to man -s
+
+SRC-DOC		:=	.
+DOCS		:=	$(SRC-DOC)/SOURCE
+build-doc: $(DOCS)
+
+$(SRC-DOC):
+	mkdir -p $(SRC-DOC)
+
+.PHONY: $(SRC-DOC)/SOURCE
+$(SRC-DOC)/SOURCE: $(SRC-DOC)
+	echo -e "git clone $(shell git remote get-url origin)\ngit checkout $(shell git rev-parse HEAD)" > "$@"
 
 #
 # Install
 #
 .PHONY: install
-install:
+install: install-man
 	install -d $(DESTDIR)$(BINDIR)
-	install -m 755 usr/bin/rockchip-chromium-x11-init.sh $(DESTDIR)$(BINDIR)/rockchip-chromium-x11-init.sh
+	install -m 755 usr/bin/rockchip-chromium-prep $(DESTDIR)$(BINDIR)/rockchip-chromium-prep
+
+.PHONY: install-man
+install-man: build-man
+	install -d $(DESTDIR)$(MANDIR)/man8
+	install -m 644 $(SRC-MAN)/*.8 $(DESTDIR)$(MANDIR)/man8/
 
 #
 # Clean
@@ -28,7 +60,15 @@ install:
 distclean: clean
 
 .PHONY: clean
-clean: clean-deb
+clean: clean-man clean-doc clean-deb
+
+.PHONY: clean-man
+clean-man:
+	rm -rf $(MANS)
+
+.PHONY: clean-doc
+clean-doc:
+	rm -rf $(DOCS)
 
 .PHONY: clean-deb
 clean-deb:

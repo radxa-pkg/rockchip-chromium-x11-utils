@@ -3,7 +3,7 @@ Description=Set up runtime environment for Rockchip Chromium
 
 [Service]
 Type=oneshot
-ExecStart=-/usr/bin/rockchip-chromium-x11-init.sh
+ExecStart=-/usr/bin/rockchip-chromium-prep
 
 [Install]
 WantedBy=graphical.target
