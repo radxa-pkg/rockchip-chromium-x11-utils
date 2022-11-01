@@ -1,5 +1,11 @@
+rockchip-chromium-x11-utils (0.1.0) stable; urgency=medium
+
+  * Clean up inconsistencies with Debian policies
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 01 Nov 2022 14:50:40 +0800
+
 rockchip-chromium-x11-utils (0.0.1) stable; urgency=high
 
-  * Add rockchip-chromium-x11-init service.
+  * Add rockchip-chromium-x11-init service
 
  -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 31 Oct 2022 17:57:00 +0800
