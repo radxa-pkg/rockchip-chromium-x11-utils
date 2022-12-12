@@ -1,3 +1,9 @@
+rockchip-chromium-x11-utils (0.1.1) stable; urgency=medium
+
+  * Fix incorrect library path
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 12 Dec 2022 16:59:45 +0800
+
 rockchip-chromium-x11-utils (0.1.0) stable; urgency=medium
 
   * Clean up inconsistencies with Debian policies
