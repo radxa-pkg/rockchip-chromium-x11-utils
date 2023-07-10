@@ -1,2 +1,5 @@
 # Small bug number is very probable for us.
 rockchip-chromium-x11-utils: improbable-bug-number-in-closes
+
+# Ignore troff warning
+rockchip-chromium-x11-utils: groff-message
