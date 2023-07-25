@@ -1,3 +1,10 @@
+rockchip-chromium-x11-utils (0.1.3) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Update GPU flags
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 25 Jul 2023 10:03:36 +0000
+
 rockchip-chromium-x11-utils (0.1.2) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
