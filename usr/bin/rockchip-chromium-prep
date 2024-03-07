@@ -3,7 +3,27 @@
 # Create dummy video node for chromium V4L2 VDA/VEA with rkmpp plugin
 if [ ! -e /dev/video-dec0 ]
 then
-    echo dec > /dev/video-dec0
+    case "$(cat /proc/device-tree/compatible)" in
+        *rk3588*)
+            cat << EOF > /dev/video-dec0
+type=dec
+codecs=VP8:VP9:H.264:H.265:AV1
+max-width=7680
+max-height=4320
+EOF
+            ;;
+        *rk3568*)
+            cat << EOF > /dev/video-dec0
+type=dec
+codecs=VP8:VP9:H.264:H.265
+max-width=3840
+max-height=2160
+EOF
+            ;;
+        *)
+            echo dec > /dev/video-dec0
+            ;;
+    esac
     chmod 660 /dev/video-dec0
     chown root:video /dev/video-dec0
 fi
