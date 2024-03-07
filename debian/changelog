@@ -1,3 +1,12 @@
+rockchip-chromium-x11-utils (0.2.0) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * feat: no longer needs to override chromium-wrapper with Rockchip Linux 6.1 SDK
+  * fix: add SoC specific video-dec0 settings
+  * fix: merge changes from same maintainers
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 07 Mar 2024 18:50:00 +0800
+
 rockchip-chromium-x11-utils (0.1.4) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
