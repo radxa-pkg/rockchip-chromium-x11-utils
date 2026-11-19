@@ -1,3 +1,13 @@
+rockchip-chromium-x11-utils (0.2.4) jammy; urgency=medium
+
+  [ dependabot[bot] ]
+  * Bump actions/upload-artifact from 4 to 7
+
+  [ ZHANG Yuntian ]
+  * fix: build in new template
+
+ -- "Radxa Computer (Shenzhen) Co., Ltd." <dev@radxa.com>  Thu, 19 Nov 2026 03:43:59 +0000
+
 rockchip-chromium-x11-utils (0.2.3) jammy; urgency=medium
 
   [ CodeChenL ]
